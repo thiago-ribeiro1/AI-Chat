@@ -184,7 +184,7 @@ body.chat-open .chat-window {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: -26px;
+    margin-top: -28px;
     font-size: 24px;
     font-weight: bold;
     color: var(--black);
