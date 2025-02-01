@@ -4,6 +4,8 @@
 
 [Acesse Aqui](https://ai-chat-red-pi.vercel.app/)
 
+![Image](https://github.com/user-attachments/assets/0369daa3-c942-4136-9cda-5831699caa22)
+
 ## 🚀 Tecnologias Utilizadas
 - **HTML5** - Estruturação da aplicação
 - **CSS3** - Estilização responsiva
