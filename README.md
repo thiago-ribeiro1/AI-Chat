@@ -2,6 +2,8 @@
 
 **AI Chat** é uma aplicação web que consome a API do Gemini para interagir com os usuários via chat. A interface é desenvolvida com **HTML, CSS e JavaScript puro**, garantindo um **design responsivo** para diferentes dispositivos.
 
+[Acesse Aqui](https://ai-chat-red-pi.vercel.app/)
+
 ## 🚀 Tecnologias Utilizadas
 - **HTML5** - Estruturação da aplicação
 - **CSS3** - Estilização responsiva
