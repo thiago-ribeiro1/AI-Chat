@@ -1,5 +1,7 @@
 export default async function handler(req, res) {
-    const API_KEY = process.env.GOOGLE_API_KEY; // Chave vercel
+    const API_KEY = process.env.GOOGLE_API_KEY;
+
+    console.log("API_KEY do backend:", API_KEY);  // Verifica se a variável está sendo lida corretamente
 
     if (!API_KEY) {
         return res.status(500).json({ error: "Chave da API não encontrada" });
