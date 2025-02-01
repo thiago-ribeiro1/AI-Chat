@@ -20,7 +20,7 @@ Para rodar este projeto em outra máquina, é necessário ter uma **chave API do
 ```
 
 ### 🔹 2. Rodar Localmente
-Para rodar localmente, abra o projeto em alguma IDE, e no main.js substitua "SUA_CHAVE_DA_API" pela chave API gerada com o Google AI Studio, em seguida, abra o arquivo `index.html` no navegador ou utilize uma extensão de **Live Server** no VS Code.
+Para rodar localmente, abra o projeto em alguma IDE, acesse o main.js e substitua "SUA_CHAVE_DA_API" pela chave API gerada com o Google AI Studio, em seguida, abra o arquivo `index.html` no navegador ou utilize uma extensão de **Live Server** no VS Code.
 ```
 const API_KEY = "SUA_CHAVE_DA_API"; 
 ```
