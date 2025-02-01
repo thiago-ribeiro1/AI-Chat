@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Chat</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" type="image/x-icon" href="img/chatbot-icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+<body>
+
+    <div class="chat-title">
+        <h1>AI Chat</h1>
+        <img class="chat-logo" src="img/chatbot-chat-message-vectorart.png" alt="logo-ai-chat">
+    </div>  
+
+    <section class="chat-window">
+        <button class="close">x fechar</button>
+        <div class="chat">
+            <div class="model"> 
+                <p>Como posso ajudá-lo?</p>
+            </div>
+            
+        </div>
+        <div class="input-area">
+            <input placeholder="Envie uma mensagem..." type="text">
+            <button>
+                <img src="icon/send-icon.png" alt="send">
+            </button>
+        </div>
+    </section>
+
+    <div class="chat-button">
+        <img src="icon/chat-icon.png" alt="start chat">
+    </div>
+
+    <script type="importmap">
+        {
+          "imports": {
+            "@google/generative-ai": "https://esm.run/@google/generative-ai"
+          }
+        }
+    </script>
+
+    <div class="chat-footer">
+        <p>Developed by <a href="https://github.com/thiago-ribeiro1" target="_blank">@thiago-ribeiro1</a></p>
+    </div>
+    
+    <script type="module" src="js/main.js"></script>
+    <script type="module" src="js/sendMessage.js"></script>
+    <script type="module" src="api/proxy.js"></script>
+    
+    
+</body>
+</html>
