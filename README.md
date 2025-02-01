@@ -19,20 +19,11 @@ Para rodar este projeto em outra máquina, é necessário ter uma **chave API do
  cd AI-Chat
 ```
 
-### 🔹 2. Configurar a API Key no Vercel
-1. Vá até o [Vercel](https://vercel.com/) e acesse seu projeto.
-2. Em **Settings → Environment Variables**, adicione:
-   - **Key:** `GOOGLE_API_KEY`
-   - **Value:** `SUA_CHAVE_DA_API`
-3. Salve e faça o redeploy do projeto.
-
-### 🔹 3. Rodar Localmente
-Para rodar localmente, crie um arquivo `.env.local` na raiz do projeto e adicione:
+### 🔹 2. Rodar Localmente
+Para rodar localmente, abra o projeto em alguma IDE, e no main.js substitua "SUA_CHAVE_DA_API" pela chave API gerada com o Google AI Studio, em seguida, abra o arquivo `index.html` no navegador ou utilize uma extensão de **Live Server** no VS Code.
 ```
-GOOGLE_API_KEY=SUA_CHAVE_AQUI
+const API_KEY = "SUA_CHAVE_DA_API"; 
 ```
-Em seguida, abra o arquivo `index.html` no navegador ou utilize uma extensão de **Live Server** no VS Code.
-
 
 ## 📌 Funcionalidades
 ✅ Chat interativo com IA via API do Gemini  
@@ -40,4 +31,4 @@ Em seguida, abra o arquivo `index.html` no navegador ou utilize uma extensão de
 ✅ Estrutura modular e organizada    
 
 ---
-📌 **Autor:** [Thiago Ribeiro](https://github.com/thiago-ribeiro1)
+📌 **Developed By:** [Thiago Ribeiro](https://github.com/thiago-ribeiro1)
