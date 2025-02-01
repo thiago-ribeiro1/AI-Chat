@@ -9,9 +9,10 @@
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Ocupa toda a altura da tela */
+    min-height: 100vh;
     margin: 0;
     background-color: aliceblue;
+    overflow: hidden; /* Remove barra de rolagem */
 }
 
 body.chat-open .chat-window {
@@ -50,12 +51,12 @@ body.chat-open .chat-window {
     border-radius: 20px;
     position: fixed;
     z-index: 999;
-    top: 50%;
+    top: 45%;
     left: 50%;
     transform: translate(-50%, -50%);
-    height: 80%; /* Ocupa 80% da altura */
-    width: 90%; /* Responsivo: 90% da largura */
-    max-width: 600px; /* Limite para telas maiores */
+    height: 80%;
+    width: 90%;
+    max-width: 600px;
     flex-direction: column;
     justify-content: space-between;
 }
@@ -152,31 +153,14 @@ body.chat-open .chat-window {
 @media screen and (max-width: 768px) {
     .chat-window {
         width: 95%;
-        height: 85%;
-    }
-
-    .input-area {
-        padding: 8px;
-    }
-
-    .input-area input {
-        height: 40px;
-        font-size: 14px;
-    }
-
-    .input-area button {
-        height: 40px;
-        width: 40px;
-    }
-
-    .input-area button img {
-        width: 18px;
-        height: 18px;
+        height: 100%; /* Ocupa 100% da altura */
+        max-height: 100vh; /* Garante que não ultrapasse a altura da tela */
+        border-radius: 0; /* Remove bordas arredondadas para ocupar toda a tela */
     }
 }
 
 .chat-footer, .chat-title {
-    font-family: "Raleway", sans-serif;
+    font-family: "Poppins", sans-serif;
 }
 
 .chat-title {
@@ -184,7 +168,7 @@ body.chat-open .chat-window {
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: -26px;
+    margin-top: -30px;
     font-size: 24px;
     font-weight: bold;
     color: var(--black);
