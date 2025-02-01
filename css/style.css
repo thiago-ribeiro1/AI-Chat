@@ -14,10 +14,8 @@ body {
     background-color: aliceblue;
 }
 
-body.chat-open {
-    .chat-window {
-        display: flex;
-    }
+body.chat-open .chat-window {
+    display: flex;
 }
 
 .chat-button {
@@ -34,22 +32,18 @@ body.chat-open {
     justify-content: center;
     align-items: center;
     cursor: pointer;
+}
 
-    img {
-        width: 50px;
-    }
+.chat-button img {
+    width: 50px;
+}
 
-    &:hover {
-        box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    }
+.chat-button:hover {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
 }
 
 .chat-window {
-    * {
-        font-family: 'Poppins', sans-serif;
-    }
-    
-
+    font-family: 'Poppins', sans-serif;
     display: none;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     background-color: white;
@@ -64,143 +58,146 @@ body.chat-open {
     max-width: 600px; /* Limite para telas maiores */
     flex-direction: column;
     justify-content: space-between;
+}
 
-    .close {
-        border: none;
-        padding: 8px 0;
-        background-color: var(--black);
-        color: white;
-        border-radius: 20px 20px 0 0;
-        cursor: pointer;
-        text-align: center;
-    }
+.close {
+    border: none;
+    padding: 8px 0;
+    background-color: var(--black);
+    color: white;
+    border-radius: 20px 20px 0 0;
+    cursor: pointer;
+    text-align: center;
+}
 
-    .chat {
-        flex: 1;
-        padding: 8px;
-        overflow-y: auto;
+.chat {
+    flex: 1;
+    padding: 8px;
+    overflow-y: auto;
+    font-weight: 400;
+}
 
-        p {
-            border-radius: 20px;
-            width: auto;
-            max-width: 80%;
-            margin: 8px 0;
-            font-size: 16px;
-            padding: 16px;
-            word-wrap: break-word;
-        }
+.chat p {
+    border-radius: 20px;
+    width: auto;
+    max-width: 80%;
+    margin: 8px 0;
+    font-size: 16px;
+    padding: 16px;
+    word-wrap: break-word;
+}
 
-        div.model {
-            p {
-                background-color: var(--grey);
-            }
-        }
+.chat div.model p {
+    background-color: var(--grey);
+}
 
-        div.user {
-            display: flex;
-            justify-content: flex-end;
+.chat div.user {
+    display: flex;
+    justify-content: flex-end;
+}
 
-            p {
-                background-color: var(--blue);
-                color: white;
-            }
-        }
+.chat div.user p {
+    background-color: var(--blue);
+    color: white;
+}
 
-        div.error {
-            p {
-                font-size: 14px;
-                text-align: center;
-                color: red;
-            }
-        }
-        font-weight: 400;
+.chat div.error p {
+    font-size: 14px;
+    text-align: center;
+    color: red;
+}
+
+.input-area {
+    height: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border-top: 1px solid lightgray;
+    gap: 8px;
+}
+
+.input-area input {
+    height: 45px;
+    flex: 1;
+    border: none;
+    background-color: var(--grey);
+    border-radius: 25px;
+    padding-left: 16px;
+    font-size: 16px;
+    outline: none;
+    width: 100%;
+    min-width: 0;
+}
+
+.input-area button {
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--blue);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    flex-shrink: 0;
+}
+
+.input-area button img {
+    width: 20px;
+    height: 20px;
+}
+
+@media screen and (max-width: 768px) {
+    .chat-window {
+        width: 95%;
+        height: 85%;
     }
 
     .input-area {
-        height: 70px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        padding: 0 8px;
-        border-top: 1px solid lightgray;
+        padding: 8px;
+    }
 
-        input {
-            height: 40px;
-            flex: 1;
-            border: none;
-            background-color: var(--grey);
-            border-radius: 20px;
-            padding-left: 20px;
-            font-size: 16px;
-        }
+    .input-area input {
+        height: 40px;
+        font-size: 14px;
+    }
 
-        button {
-            height: 40px;
-            width: 40px;
-            border-radius: 100%;
-            border: none;
-            margin-left: 12px;
-            background-color: var(--blue);
-            color: white;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            cursor: pointer;
+    .input-area button {
+        height: 40px;
+        width: 40px;
+    }
 
-            img {
-                width: 18px;
-            }
-
-            &:hover {
-                box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-            }
-        }
+    .input-area button img {
+        width: 18px;
+        height: 18px;
     }
 }
 
-.loader {
-    width: 40px;
-    opacity: 0.4;
-    aspect-ratio: 4;
-    background: radial-gradient(circle closest-side, #000 90%, #0000) 0/calc(100%/3) 100% space;
-    clip-path: inset(0 100% 0 0);
-    animation: l1 1.5s steps(4) infinite;
-}
-
-@keyframes l1 {
-    to {
-        clip-path: inset(0 -34% 0 0);
-    }
-}
-
-.chat-footer, 
-.chat-title {
+.chat-footer, .chat-title {
     font-family: "Raleway", sans-serif;
 }
-
 
 .chat-title {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 10px; /* Espaço entre o título e a imagem */
+    gap: 10px;
     margin-top: -18px;
-    font-family: "Raleway", sans-serif;
     font-size: 24px;
     font-weight: bold;
     color: var(--black);
 }
 
 .chat-title img {
-    width: 80px; /* Ajuste o tamanho da imagem conforme necessário */
-    height: 80px; /* Proporção para combinar com o título */
+    width: 80px;
+    height: 80px;
 }
 
-
 .chat-footer {
-    margin-top: auto; /* Empurra o footer para o final */
+    margin-top: auto;
     text-align: center;
-    font-family: "Raleway", sans-serif;
     font-size: 14px;
     color: var(--black);
     padding: 10px 0;
