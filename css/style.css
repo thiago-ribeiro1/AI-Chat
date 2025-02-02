@@ -95,6 +95,7 @@ body.chat-open .chat-window {
     border-radius: 20px 20px 0 0;
     cursor: pointer;
     text-align: center;
+    z-index: 1100; // sobrepor o chat-title
 }
 
 .chat {
