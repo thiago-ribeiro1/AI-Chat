@@ -233,15 +233,23 @@ body.chat-open .chat-window {
 
 .chat-title {
     position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px; /* Garante que não fique muito largo */
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
-    margin-top: -29px;
     font-size: 24px;
     font-weight: bold;
     color: var(--blue);
     animation: textGlow 2s infinite alternate;
+    background-color: var(--black);
+    padding: 10px 0;
+    border-radius: 20px 20px 0 0;
+    z-index: 1000;
 }
 
 .chat-title img {
@@ -251,11 +259,18 @@ body.chat-open .chat-window {
 
 .chat-footer {
     position: fixed;
-    margin-top: auto;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 600px; /* Garante que se ajuste ao tamanho do chat */
     text-align: center;
     font-size: 14px;
     color: white;
     padding: 10px 0;
+    background-color: var(--black);
+    border-radius: 0 0 20px 20px;
+    z-index: 1000;
 }
 
 .chat-footer a {
