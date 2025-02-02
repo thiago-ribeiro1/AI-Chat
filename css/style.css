@@ -100,7 +100,6 @@ body.chat-open .chat-window {
 .chat-title {
     position: sticky;
     top: 0;
-    background: linear-gradient(145deg, #1e1e1e, #000000); /* Mantém o fundo */
     z-index: 1000;
     padding: 10px;
     border-radius: 20px 20px 0 0;
@@ -228,8 +227,7 @@ body.chat-open .chat-window {
 
 .chat-footer {
     position: sticky;
-    bottom: 0;
-    background: linear-gradient(145deg, #1e1e1e, #000000);
+    bottom: 0:
     z-index: 1000;
     padding: 10px;
     border-radius: 0 0 20px 20px;
