@@ -233,6 +233,7 @@ body.chat-open .chat-window {
 }
 
 .chat-title {
+    position: fixed;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -250,6 +251,8 @@ body.chat-open .chat-window {
 }
 
 .chat-footer {
+    position: fixed;
+    bottom: 0;
     margin-top: auto;
     text-align: center;
     font-size: 14px;
