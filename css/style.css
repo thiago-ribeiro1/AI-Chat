@@ -249,7 +249,7 @@ body.chat-open .chat-window {
     color: var(--blue);
     padding: 15px;
     border-radius: 20px 20px 0 0;
-    z-index: 1000;
+    z-index: 999;
     animation: textGlow 2s infinite alternate;
 }
 
