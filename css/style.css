@@ -236,7 +236,7 @@ body.chat-open .chat-window {
     position: fixed;
     display: flex;
     align-items: center !important;
-    justify-content: center;
+    justify-content: center !important;
     gap: 10px;
     margin-top: -29px;
     font-size: 24px;
