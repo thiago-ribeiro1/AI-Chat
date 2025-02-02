@@ -241,7 +241,7 @@ body.chat-open .chat-window {
     display: flex;
     align-items: center !important;
     justify-content: center;
-    margin-top: -41px;
+    margin-top: -43px;
     gap: 10px;   
     font-size: 24px;
     font-weight: bold;
