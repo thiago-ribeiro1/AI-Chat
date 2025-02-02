@@ -29,7 +29,7 @@ Para rodar localmente, abra o projeto no Visual Studio Code, acesse o main.js e 
 const API_KEY = "SUA_CHAVE_DA_API"; 
 ```
 
-###🔹 3.  Configuração da Requisição para a API Gemini
+### 🔹 3.  Configuração da Requisição para a API Gemini
 
 No código JavaScript (main.js), a requisição para a API Gemini está sendo feita através de um **proxy** na Vercel:
 O endpoint utilizado atualmente está definido como:
