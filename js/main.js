@@ -52,7 +52,7 @@ async function sendMessage(prompt) {
 
     try {
         // Faz a requisição para a API Gemini
-        const response = await fetch(`${URL}?key=${API_KEY}`, {
+        const response = await fetch("/api/proxy", { 
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(jsonRequest)
