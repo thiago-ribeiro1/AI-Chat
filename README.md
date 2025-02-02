@@ -4,7 +4,7 @@
 
 [Acesse Aqui](https://ai-chat-app-online.vercel.app)
 
-![Image](https://github.com/user-attachments/assets/1f18a108-8c81-42b9-955c-c106b88be09e)
+![Image](https://github.com/user-attachments/assets/ab80ccc3-c563-461e-9803-af5c6395d39f)
 
 ## 🚀 Tecnologias Utilizadas
 - **HTML5** - Estruturação da aplicação
