@@ -52,12 +52,11 @@ async function sendMessage(prompt) {
 
     try {
         // Faz a requisição para a API Gemini
-        const response = await fetch("/api/proxy", {  
+        const response = await fetch(`${URL}?key=${API_KEY}`, {
             method: "POST",
             headers: { "Content-Type": "application/json" },
             body: JSON.stringify(jsonRequest)
         });
-
 
         if (!response.ok) throw new Error(`Erro: ${response.status} - ${response.statusText}`);
         
@@ -126,7 +125,7 @@ style.textContent = `
         flex-direction: column;
         align-items: center;
         font-size: 14px;
-        color: #3d88f9;
+        color: #00ffff;
         margin: 10px;
     }
     
@@ -135,7 +134,7 @@ style.textContent = `
         width: 40px;
         height: 40px;
         border: 4px solid rgba(61, 136, 249, 0.3); /* Define uma borda com transparência */
-        border-top-color: #3d88f9; /* Define a cor da borda superior para criar o efeito de rotação */
+        border-top-color: #00ffff; /* Define a cor da borda superior para criar o efeito de rotação */
         border-radius: 50%; /* Deixa o elemento circular */
         animation: spin 1s linear infinite; /* Aplica a animação de rotação */
     }
