@@ -232,17 +232,15 @@ body.chat-open .chat-window {
 }
 
 .chat-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--black);
-    padding: 10px 0;
-    text-align: center;
-    z-index: 2;
-    border-radius: 20px 20px 0 0;
-    font-size: 24px; /* Mantém o tamanho do texto */
-    font-weight: bold; /* Mantém a espessura do texto */
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -29px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--blue);
     animation: textGlow 2s infinite alternate;
 }
 
@@ -252,18 +250,12 @@ body.chat-open .chat-window {
 }
 
 .chat-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    background-color: var(--black);
-    padding: 10px 0;
+    position: fixed;
+    margin-top: auto;
     text-align: center;
-    z-index: 2;
-    border-radius: 0 0 20px 20px;
-    font-size: 14px; /* Mantém o tamanho do texto */
-    font-weight: normal; /* Ajuste para coerência com o restante do texto */
+    font-size: 14px;
     color: white;
+    padding: 10px 0;
 }
 
 .chat-footer a {
