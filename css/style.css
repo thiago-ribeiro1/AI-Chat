@@ -49,7 +49,6 @@ body.chat-open .chat-window {
     box-shadow: rgba(0, 255, 255, 0.5) 0px 3px 8px;
 }
 
-/* Janela do Chat */
 .chat-window {
     font-family: 'Poppins', sans-serif;
     display: none;
@@ -63,9 +62,8 @@ body.chat-open .chat-window {
     height: 80%;
     width: 90%;
     max-width: 600px;
-    display: flex;
     flex-direction: column;
-    overflow: hidden; /* Impede a rolagem da janela do chat */
+    justify-content: space-between;
 }
 
 .chat-window::before {
@@ -88,7 +86,6 @@ body.chat-open .chat-window {
     z-index: -1;
 }
 
-/* Botão de Fechar */
 .close {
     border: none;
     padding: 8px 0;
@@ -99,14 +96,11 @@ body.chat-open .chat-window {
     text-align: center;
 }
 
-/* Área do Chat */
 .chat {
     flex: 1;
     padding: 8px;
-    overflow-y: auto; /* Permite rolagem apenas no conteúdo */
+    overflow-y: auto;
     font-weight: 400;
-    margin-top: 60px; /* Espaço para o título fixo */
-    margin-bottom: 60px; /* Espaço para o rodapé fixo */
 }
 
 .chat p {
@@ -141,7 +135,6 @@ body.chat-open .chat-window {
     color: red;
 }
 
-/* Modelo */
 .model {
     background-color: rgba(0, 255, 255, 0.1);
     color: white;
@@ -152,7 +145,6 @@ body.chat-open .chat-window {
     box-shadow: 0 0 10px var(--blue);
 }
 
-/* Input de Mensagens */
 .input-area {
     height: 60px;
     display: flex;
@@ -209,7 +201,6 @@ body.chat-open .chat-window {
     height: 20px;
 }
 
-/* Responsividade */
 @media screen and (max-width: 768px) {
     .chat-window {
         width: 95%;
@@ -236,23 +227,20 @@ body.chat-open .chat-window {
     }
 }
 
-/* Fixando o Título e o Rodapé */
+.chat-footer, .chat-title {
+    font-family: "Raleway", sans-serif;
+}
+
 .chat-title {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 10px;
+    margin-top: -29px;
     font-size: 24px;
     font-weight: bold;
     color: var(--blue);
     animation: textGlow 2s infinite alternate;
-    padding: 10px 0;
-    border-radius: 20px 20px 0 0;
-    z-index: 1000;
 }
 
 .chat-title img {
@@ -261,14 +249,26 @@ body.chat-open .chat-window {
 }
 
 .chat-footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
+    margin-top: auto;
     text-align: center;
     font-size: 14px;
     color: white;
     padding: 10px 0;
-    border-radius: 0 0 20px 20px;
-    z-index: 1000;
+}
+
+.chat-footer a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.chat-footer a:hover {
+    text-decoration: underline;
+}
+
+.loading {
+    font-style: italic;
+    color: #00ffff;
+    text-align: center;
+    padding: 5px;
 }
