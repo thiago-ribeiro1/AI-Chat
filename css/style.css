@@ -64,7 +64,7 @@ body.chat-open .chat-window {
     max-width: 600px;
     flex-direction: column;
     justify-content: space-between;
-    overflow: hidden; /* Impede que os títulos e rodapé rolem */
+    overflow: hidden; /* Impede que o título e footer rolem */
 }
 
 .chat-window::before {
@@ -97,34 +97,11 @@ body.chat-open .chat-window {
     text-align: center;
 }
 
-.chat-title {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    padding: 10px;
-    border-radius: 20px 20px 0 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    margin-top: -29px;
-    font-size: 24px;
-    font-weight: bold;
-    color: var(--blue);
-    animation: textGlow 2s infinite alternate;
-}
-
-.chat-title img {
-    width: 80px;
-    height: 80px;
-}
-
 .chat {
     flex: 1;
     padding: 8px;
-    overflow-y: auto; /* Permite rolagem apenas no conteúdo */
+    overflow-y: auto;
     font-weight: 400;
-    max-height: calc(100% - 120px); /* Ajusta altura conforme necessário */
 }
 
 .chat p {
@@ -225,34 +202,6 @@ body.chat-open .chat-window {
     height: 20px;
 }
 
-.chat-footer {
-    position: sticky;
-    bottom: 0:
-    z-index: 1000;
-    padding: 10px;
-    border-radius: 0 0 20px 20px;
-    text-align: center;
-    font-size: 14px;
-    color: white;
-}
-
-.chat-footer a {
-    text-decoration: none;
-    color: var(--blue);
-    font-weight: bold;
-}
-
-.chat-footer a:hover {
-    text-decoration: underline;
-}
-
-.loading {
-    font-style: italic;
-    color: #00ffff;
-    text-align: center;
-    padding: 5px;
-}
-
 @media screen and (max-width: 768px) {
     .chat-window {
         width: 95%;
@@ -277,4 +226,50 @@ body.chat-open .chat-window {
         width: 18px;
         height: 18px;
     }
+}
+
+.chat-footer, .chat-title {
+    font-family: "Raleway", sans-serif;
+}
+
+.chat-title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin-top: -29px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--blue);
+    animation: textGlow 2s infinite alternate;
+}
+
+.chat-title img {
+    width: 80px;
+    height: 80px;
+}
+
+.chat-footer {
+    margin-top: auto;
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    padding: 10px 0;
+}
+
+.chat-footer a {
+    text-decoration: none;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+.chat-footer a:hover {
+    text-decoration: underline;
+}
+
+.loading {
+    font-style: italic;
+    color: #00ffff;
+    text-align: center;
+    padding: 5px;
 }
