@@ -43,7 +43,7 @@ Configure a chave API como uma variável de ambiente no sistema:
 3. Para tornar a variável permanente, adicione a linha acima ao arquivo `~/.bashrc` ou `~/.zshrc`.
 
 ### 🔹 3. Rodar Localmente
-Para rodar localmente, abra o projeto no Visual Studio Code, acesse o main.js e substitua "SUA_CHAVE_DA_API" pela chave API gerada com o Google AI Studio, em seguida, utilize uma extensão de **Live Server** no VS Code para rodar a aplicação em http://127.0.0.1:5500/index.html
+Para rodar localmente, abra o projeto no Visual Studio Code, acesse o (`main.js`) e substitua "SUA_CHAVE_DA_API" pela chave API gerada com o Google AI Studio, em seguida, utilize uma extensão de **Live Server** no VS Code para rodar a aplicação em http://127.0.0.1:5500/index.html
 ```
 const API_KEY = "SUA_CHAVE_DA_API"; 
 ```
