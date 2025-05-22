@@ -243,17 +243,17 @@ body.chat-open .chat-window {
     justify-content: center;
     margin-top: -43px;
     gap: 10px;   
-    font-size: 24px;
+    font-size: 15px;
     font-weight: bold;
     color: var(--blue);
-    padding: 15px;
+    padding: 32px;
     border-radius: 20px 20px 0 0;
     animation: textGlow 2s infinite alternate;
 }
 
 .chat-title img {
-    width: 80px;
-    height: 80px;
+    width: 52px;
+    height: 52px;
 }
 
 .chat-footer {
