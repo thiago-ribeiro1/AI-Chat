@@ -1,5 +1,5 @@
 // const API_KEY = ""; 
-const URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.0-flash:generateContent";
+const URL = "https://generativelanguage.googleapis.com/v1beta/models/gemini-2.5-flash:generateContent";
 const history = [];
 const CAPACITY = 6; // Limite de mensagens no histórico
 
